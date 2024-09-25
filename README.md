@@ -3,10 +3,10 @@ The first project for the course
 
 To run the project, you must have Docker installed.
 
-First, build the container:
+First, build the image:
 `docker build .`
 
-Then, you will see the ID of the built container, so you can execute it:
+Then, you will see the ID of the built image, so you can execute it:
 `docker run -it --network=host *containerID*`
 
 You'll get the Bash environment, based on Debian 12.7. To run the server, do this:
