@@ -1,0 +1,138 @@
+footer {
+  background-color: #212121;
+  padding: 0px 18px;
+  padding-top: 24px;
+  padding-bottom: 40px;
+}
+
+footer a {
+  font-weight: 400;
+  font-size: 14px;
+  color: #c5c4c4;
+  text-decoration: none;
+  line-height: 20px;
+}
+
+footer > div {
+  max-width: 1120px;
+  margin: 0px auto;
+}
+
+footer > .top {
+  display: flex;
+  height: 69px;
+  border-bottom: 1px solid #707070;
+}
+
+footer > .top > h5 {
+  display: flex;
+  color: #f6f7f8;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  height: 44px;
+  align-items: center;
+}
+
+footer > .top > button {
+  color: white;
+  background-color: #212121;
+  width: 119px;
+  height: 44px;
+  border: 2px solid white;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 16px;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+footer > .top > button:hover {
+  color: #212121;
+  background-color: white;
+}
+
+footer > .links {
+  display: flex;
+}
+
+footer > .links > div {
+  height: 224px;
+  width: 33%;
+  margin: 0px auto;
+  margin-top: 24px;
+}
+
+footer > .links > div > h6 {
+  font-weight: 400;
+  font-size: 16px;
+  color: #f6f7f8;
+}
+
+footer > .links > div > ul {
+  list-style: none;
+}
+
+footer > .social-media {
+  margin-top: 24px;
+  display: flex;
+}
+
+footer > .social-media > .follow {
+  width: 278px;
+}
+
+footer > .social-media > .follow > h6 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #f6f7f8;
+}
+
+footer > .social-media > .follow > .links {
+  margin-top: 12px;
+  display: flex;
+}
+
+footer > .social-media > .follow > .links > a {
+  margin: 0px auto;
+}
+
+footer > .social-media > .follow > .links > a:first-child {
+  margin-left: 0px;
+}
+
+footer > .social-media > .follow > .links > a:last-child {
+  margin-right: 0px;
+}
+
+footer > .social-media > .install {
+  margin: auto 0px;
+  margin-left: auto;
+}
+
+footer > .bottom {
+  margin-top: 24px;
+}
+
+footer > .bottom > * {
+  margin: 0px 24px;
+}
+
+footer > .bottom > span {
+  margin-left: 0px;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 950px) {
+  footer > .social-media > .install {
+    display: none;
+  }
+
+  footer > .bottom > a {
+    display: none;
+  }
+}

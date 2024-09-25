@@ -1,0 +1,31 @@
+#events > .selects {
+  margin-top: 12px;
+  margin-bottom: 56px;
+}
+
+#events > .selects > select {
+  background-color: #f6f7f8;
+  border: none;
+  height: 46px;
+  max-width: 200px;
+  padding: 16px;
+  border-radius: 40px;
+}
+
+#events > h3 {
+  border-bottom: 4px solid #00798a;
+  width: 64px;
+  text-align: center;
+  color: #00798a;
+  margin-top: 16px;
+}
+
+#events > #all-events {
+  max-width: 604px;
+}
+
+@media screen and (max-width: 1100px) {
+  #events > .selects {
+    margin-bottom: 18px;
+  }
+}

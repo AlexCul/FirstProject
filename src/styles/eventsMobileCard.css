@@ -1,0 +1,45 @@
+.m-card {
+  display: flex;
+  border-top: 1px solid #d9d9d9;
+  padding-top: 16px;
+  margin-bottom: 28px;
+}
+
+.m-card > img {
+  height: 105px;
+  width: 159px;
+  border-radius: 8px;
+  margin-right: 12px;
+}
+
+.m-card > .info > #date {
+  color: #7c6f50;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.35px;
+}
+
+.m-card > .info > #type {
+  color: #707070;
+}
+
+.m-card > .info > #attendees {
+  margin-top: 17px;
+  color: #707070;
+}
+
+.m-card > .info > h4 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.m-card > .info > #category {
+  color: #707070;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1100px) {
+  .m-card > .info > #attendees {
+    margin-top: 30px;
+  }
+}

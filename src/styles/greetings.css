@@ -1,0 +1,86 @@
+#greetings {
+  display: flex;
+  margin-top: 72px;
+}
+
+#greetings > .left > h1 {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 52px;
+  color: #212121;
+  max-width: 600px;
+}
+
+#greetings > .left > p {
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 608px;
+  line-height: 24px;
+  margin-top: 24px;
+}
+
+#greetings > .right,
+#greetings > .left {
+  width: 50%;
+}
+
+#greetings > .right {
+  display: flex;
+}
+
+#greetings > .right > img {
+  margin: 0px auto;
+  max-width: 379px;
+  min-width: 215px;
+}
+
+#join-meetup {
+  background-color: #00798a;
+  width: 125px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out,
+    border 0.3s ease-in-out;
+  margin-top: 24px;
+  font-weight: 400;
+}
+
+#join-meetup:hover {
+  color: #00798a;
+  background-color: white;
+  border: 2px solid #00798a;
+}
+
+@media screen and (max-width: 960px) {
+  #greetings {
+    display: block;
+    margin-top: 30px;
+  }
+
+  #greetings > .right,
+  #greetings > .left {
+    margin: 0px auto;
+    width: 90%;
+  }
+
+  #greetings > .left > p {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+
+  #greetings > .left > h1 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  #greetings > .right > img {
+    width: 60%;
+  }
+
+  #join-meetup {
+    display: none;
+  }
+}

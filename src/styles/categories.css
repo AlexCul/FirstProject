@@ -1,0 +1,41 @@
+#categories {
+  margin-top: 64px;
+}
+
+#categories > .links {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(135px, 1fr));
+  margin-top: 24px;
+}
+
+#categories > .links > a {
+  width: 135px;
+  height: 112px;
+  background-color: #97cad114;
+  color: #212121;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+}
+
+#categories > .links > a > img {
+  width: 20px;
+  margin: 0px auto;
+}
+
+@media screen and (max-width: 960px) {
+  #categories {
+    margin-top: 15px;
+    padding: 0px 15px;
+  }
+
+  #categories > .links > a {
+    margin: 11px 23px;
+  }
+}

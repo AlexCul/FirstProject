@@ -1,0 +1,36 @@
+#popular-cities {
+  margin-top: 64px;
+}
+
+#popular-cities > p {
+  color: #707070;
+  font-weight: 400;
+  margin-top: 16px;
+}
+
+#popular-cities > #cities {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(205px, 1fr));
+}
+
+#popular-cities > #cities {
+  margin-top: 28px;
+}
+
+#popular-cities > #cities > .city {
+  text-align: center;
+}
+
+#popular-cities > #cities > .city > h3 {
+  margin-top: 24px;
+}
+
+@media screen and (max-width: 1030px) {
+  #popular-cities > #cities > .city:last-child {
+    display: none;
+  }
+
+  #popular-cities {
+    padding: 0px 15px;
+  }
+}

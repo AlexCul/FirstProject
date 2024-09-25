@@ -1,0 +1,67 @@
+.v-card > .cover {
+  height: 153px;
+  width: 272px;
+  border-radius: 8px;
+  padding: 5px 10px;
+}
+
+.v-card > .cover > .type {
+  width: 125px;
+  height: 20px;
+  background-color: white;
+  border-radius: 4px;
+  color: #707070;
+  display: flex;
+  align-items: center;
+}
+
+.v-card > .cover > .type > img {
+  margin: 0px 4px;
+}
+
+.v-card {
+  padding-top: 16px;
+  margin-bottom: 28px;
+  width: 272px;
+}
+
+.v-card > img {
+  height: 153px;
+  width: 272px;
+  border-radius: 8px;
+  margin-right: 12px;
+}
+
+.v-card > .info > h4 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-top: 12px;
+}
+
+.v-card > .info > .category {
+  color: #707070;
+  margin-top: 8px;
+}
+
+.v-card > .info > .date,
+.v-card > .info > div > .attendees,
+.v-card > .info > div > .cost {
+  display: flex;
+  align-items: center;
+  color: #212121;
+}
+
+.v-card > .info > .date > img,
+.v-card > .info > div > .attendees > img,
+.v-card > .info > div > .cost > img {
+  margin-right: 6px;
+}
+
+.v-card > .info > .date {
+  margin-top: 8px;
+}
+
+.v-card > .info > div {
+  margin-top: 12px;
+}

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/scripts/store.js"></script>
+    <script src="/scripts/cards.js"></script>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/navbar.css" />
+    <link rel="stylesheet" href="/styles/events.css" />
+    <link rel="stylesheet" href="/styles/eventsHCard.css" />
+    <link rel="stylesheet" href="/styles/eventsMobileCard.css" />
+    <link rel="stylesheet" href="/styles/map.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
+    <title>Meetup - Events</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="top">
+          <div class="left">
+            <a href="/templates/index.html"
+              ><img src="/assets/images/Logo.svg" alt="Logo"
+            /></a>
+            <div class="searcher">
+              <img
+                id="search-icon"
+                src="/assets/images/icons/Search.svg"
+                alt="Search"
+              />
+              <input type="text" placeholder="Search events" />
+              <span>Mountain view, CA</span>
+              <button>
+                <img src="/assets/images/icons/WhiteSearch.svg" alt="Search" />
+              </button>
+            </div>
+          </div>
+          <div class="right">
+            <img src="/assets/images/icons/Language.svg" alt="Language" />
+            <select name="locale" id="locale">
+              <option value="en" selected>English</option>
+            </select>
+            <button href="#" id="login">Log in</button>
+            <button href="#" id="signup">Sign up</button>
+          </div>
+        </div>
+        <div class="searcher mobile">
+          <img
+            id="search-icon"
+            src="/assets/images/icons/Search.svg"
+            alt="Search"
+          />
+          <input type="text" placeholder="Search events" />
+          <span>Mountain view, CA</span>
+          <button>
+            <img src="/assets/images/icons/WhiteSearch.svg" alt="Search" />
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main style="display: flex">
+      <article id="events">
+        <h2>Events near New York, NY</h2>
+        <h3>Events</h3>
+        <div class="selects">
+          <select name="date" id="date" onchange="change('date');">
+            <option value="-" selected disabled>Any date</option>
+          </select>
+          <select name="type" id="type" onchange="change('type')">
+            <option value="-" selected disabled>Any type</option>
+          </select>
+          <select name="distance" id="distance" onchange="change('distance')">
+            <option value="-" selected disabled>Any distance</option>
+          </select>
+          <select name="category" id="category" onchange="change('category')">
+            <option value="-" selected disabled>Any category</option>
+          </select>
+        </div>
+        <div id="all-events"></div>
+      </article>
+      <article id="map">
+        <h3>Find events near</h3>
+        <h2>New York, NY</h2>
+        <div>
+          <div class="top">
+            <button>
+              <img src="/assets/images/icons/Close.svg" alt="Close" />
+            </button>
+          </div>
+          <div class="bottom">
+            <button
+              onclick="location.href='https://www.google.com/maps/place/%D0%9D%D1%8C%D1%8E-%D0%99%D0%BE%D1%80%D0%BA,+%D0%A1%D0%A8%D0%90/@40.69754,-74.309328,10z/data=!3m1!4b1!4m6!3m5!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!8m2!3d40.7127753!4d-74.0059728!16zL20vMDJfMjg2?entry=ttu&g_ep=EgoyMDI0MDkxOC4xIKXMDSoASAFQAw%3D%3D';"
+            >
+              Browse in map
+              <img src="/assets/images/icons/Arrows.svg" alt="Arrows" />
+            </button>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer>
+      <div class="top">
+        <h5>Create your own Meetup group.</h5>
+        <button>Get started</button>
+      </div>
+      <div class="links">
+        <div class="account">
+          <h6>Your account</h6>
+          <ul>
+            <li><a href="#">Sign up</a></li>
+            <li><a href="#">Log in</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Become an Affiliate</a></li>
+          </ul>
+        </div>
+        <div class="discover">
+          <h6>Discover</h6>
+          <ul>
+            <li><a href="#">Groups</a></li>
+            <li><a href="#">Calendar</a></li>
+            <li><a href="#">Topics</a></li>
+            <li><a href="#">Cities</a></li>
+            <li><a href="#">Online Events</a></li>
+            <li><a href="#">Local Guides</a></li>
+            <li><a href="#">Make Friends</a></li>
+          </ul>
+        </div>
+        <div class="meetup">
+          <h6>Meetup</h6>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Meetup Pro</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Apps</a></li>
+            <li><a href="#">Podcast</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="social-media">
+        <div class="follow">
+          <h6>Follow us</h6>
+          <div class="links">
+            <a href="#"
+              ><img
+                src="/assets/images/socialMedia/Facebook.svg"
+                alt="Facebook"
+              />
+            </a>
+            <a href="#"
+              ><img
+                src="/assets/images/socialMedia/Twitter.svg"
+                alt="Twitter"
+              />
+            </a>
+            <a href="#"
+              ><img
+                src="/assets/images/socialMedia/YouTube.svg"
+                alt="YouTube"
+              />
+            </a>
+            <a href="#"
+              ><img
+                src="/assets/images/socialMedia/Instagram.svg"
+                alt="Instagram"
+              />
+            </a>
+            <a href="#"
+              ><img src="/assets/images/socialMedia/TikTok.svg" alt="TikTok" />
+            </a>
+          </div>
+        </div>
+        <div class="install">
+          <a href="#"
+            ><img
+              src="/assets/images/socialMedia/PlayStore.svg"
+              alt="PlayStore"
+            />
+          </a>
+          <a href="#"
+            ><img
+              src="/assets/images/socialMedia/AppStore.svg"
+              alt="AppStore"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="bottom">
+        <span>© 2024 Meetup</span>
+        <a href="#">Terms of Service</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Do Not Sell or Share My Personal Data</a>
+        <a href="#">Cookie Policy</a>
+        <a href="#">Help</a>
+      </div>
+    </footer>
+    <script>
+      let cards = document.getElementById("all-events");
+      let card = new Card();
+
+      let dateSelect = document.getElementById("date");
+      let typeSelect = document.getElementById("type");
+      let distanceSelect = document.getElementById("distance");
+      let categorySelect = document.getElementById("category");
+
+      for (let type of card.filters.type) {
+        typeSelect.add(new Option(type));
+      }
+      for (let date of card.filters.date) {
+        dateSelect.add(new Option(date));
+      }
+      for (let distance of card.filters.distance) {
+        distanceSelect.add(new Option(distance));
+      }
+      for (let category of card.filters.category) {
+        categorySelect.add(new Option(category));
+      }
+
+      card.type = card.types.horizontal;
+      cards.innerHTML += new CardsManipulator().getHTML(card);
+
+      function change(selectIDAndName) {
+        let select = document.getElementById(selectIDAndName);
+        card = new Card();
+        card.type = card.types.horizontal;
+        card.appliedFilters[selectIDAndName] =
+          select.options[select.options.selectedIndex].value;
+        cards.innerHTML = new CardsManipulator().getHTML(card);
+      }
+
+      const mediaQueryList = window.matchMedia("(max-width: 1000px)");
+
+      function adaptiveCards(mediaQuery) {
+        if (mediaQuery.matches) {
+          card.type = card.types.mobile;
+        } else {
+          card.type = card.types.horizontal;
+        }
+
+        cards.innerHTML = new CardsManipulator().getHTML(card);
+      }
+
+      mediaQueryList.addListener(adaptiveCards);
+    </script>
+  </body>
+</html>

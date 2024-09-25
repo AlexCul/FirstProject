@@ -1,0 +1,155 @@
+nav {
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+}
+
+nav > .top {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+nav > .top > .left {
+  display: flex;
+  align-items: center;
+}
+
+nav > .top > .left > a {
+  height: 34px;
+  margin-left: 24px;
+}
+
+nav > .mobile {
+  display: none;
+}
+
+.searcher {
+  display: flex;
+}
+
+.searcher > input {
+  height: 42px;
+  width: 300px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border: 1px solid #d9d9d9;
+  background-color: white;
+  font-weight: 400;
+  font-size: 16px;
+  padding-left: 35px;
+  margin-left: 40px;
+}
+
+.searcher > #search-icon {
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 11px;
+}
+
+.searcher > span {
+  width: 254px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #d9d9d9;
+  font-size: 16px;
+  padding-left: 17px;
+}
+
+.searcher > button {
+  background-color: #f65858;
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+nav > .top > .right {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+nav > .top > .right > select {
+  background-color: white;
+  border: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  color: #212121;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+nav > .top > .right > button {
+  width: 84px;
+  height: 36px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out,
+    border 0.3s ease-in-out;
+  margin: 0px 6px;
+}
+
+nav > .top > .right > #login {
+  background-color: white;
+  color: #212121;
+}
+
+nav > .top > .right > #signup {
+  background-color: #00798a;
+  color: white;
+}
+
+nav > .right > #login:hover {
+  background-color: #00798a;
+  color: white;
+}
+
+nav > .top > .right > #signup:hover {
+  background-color: white;
+  color: #00798a;
+  border: 2px solid #00798a;
+}
+
+@media screen and (max-width: 1100px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav > .top {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 6px;
+  }
+
+  nav > .top > .right > button {
+    width: 72px;
+  }
+
+  .searcher > span {
+    display: none;
+  }
+
+  .searcher {
+    display: none;
+  }
+
+  nav > .mobile {
+    display: flex;
+    margin-top: 11px;
+    width: 100%;
+    padding: auto;
+  }
+
+  nav > .mobile > input {
+    margin-left: 20px;
+  }
+
+  nav > .mobile > #search-icon {
+    margin-left: 30px;
+  }
+}

@@ -1,0 +1,55 @@
+#map > div {
+  margin-top: 14px;
+  width: 350px;
+  height: 285px;
+  background-image: url("/assets/images/NewYorkMap.jpg");
+}
+
+#map > div > .top {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px 15px;
+}
+
+#map > div > .top > button {
+  background-color: white;
+  width: 15px;
+  height: 15px;
+  border: none;
+}
+
+#map > div > .bottom {
+  height: 240px;
+  display: flex;
+  justify-content: center;
+}
+
+#map > div > .bottom > button {
+  height: 40px;
+  width: 172px;
+  border: 2px solid #00798a;
+  border-radius: 8px;
+  background-color: white;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #00798a;
+  font-weight: 500;
+  margin-top: 77.5px;
+  transition: width 0.3s ease-in-out;
+}
+
+#map > div > .bottom > button > img {
+  margin-left: 8px;
+}
+
+#map > div > .bottom > button:hover {
+  width: 200px;
+}
+
+@media screen and (max-width: 1050px) {
+  #map {
+    display: none;
+  }
+}
